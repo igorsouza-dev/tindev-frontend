@@ -1,7 +1,10 @@
 import React from 'react';
+import logo from '../assets/logo.svg';
 
-export default () => {
+export default (props) => {
     return (
-        <p>Hello world</p>
+        <div className="main-container">
+            <img src={logo} alt="Tindev"/>
+        </div>
     );
 }

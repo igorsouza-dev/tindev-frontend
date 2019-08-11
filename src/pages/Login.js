@@ -12,8 +12,8 @@ export default (props) => {
         const response = await api.post('/devs', {
             username
         });
-        const { id } = response.data;
-        props.history.push(`/dev/${id}`);
+        const { _id } = response.data;
+        props.history.push(`/dev/${_id}`);
 
     }
     return (
